@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AE486924-2FBB-4614-8BA5-27D29B8DF1A9}</ProjectGuid>
+    <ProjectGuid>{1AF0F8A9-6643-4CD4-A756-9AA439CEE676}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MongoCms.Web.Test</RootNamespace>
-    <AssemblyName>MongoCms.Web.Test</AssemblyName>
+    <RootNamespace>MongoCms.Data</RootNamespace>
+    <AssemblyName>MongoCms.Data</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -38,9 +38,6 @@
     <Reference Include="MongoDB.Driver">
       <HintPath>..\packages\mongocsharpdriver.1.9.1\lib\net35\MongoDB.Driver.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.framework">
-      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -50,8 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BsonDocumentTests.cs" />
-    <Compile Include="PocoTests.cs" />
+    <Compile Include="Entity\AdjustPrice.cs" />
+    <Compile Include="Entity\PostRental.cs" />
+    <Compile Include="Entity\PriceAdjustment.cs" />
+    <Compile Include="Entity\QueryPriceDistribution.cs" />
+    <Compile Include="Entity\Rental.cs" />
+    <Compile Include="Entity\RentalsFilter.cs" />
+    <Compile Include="Entity\RentalsList.cs" />
+    <Compile Include="IRentalRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
