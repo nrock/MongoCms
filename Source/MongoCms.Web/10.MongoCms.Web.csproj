@@ -122,6 +122,7 @@
     <Compile Include="App_Start\RealEstateContext.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RentalsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -131,6 +132,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\RentalsFilter.cs" />
+    <Compile Include="ViewModels\RentalsList.cs" />
+    <Compile Include="ViewModels\RentalViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -172,10 +176,13 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Rentals\AdjustPrice.cshtml" />
+    <Content Include="Views\Rentals\AttachImage.cshtml" />
+    <Content Include="Views\Rentals\Index.cshtml" />
+    <Content Include="Views\Rentals\Post.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -183,6 +190,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MongoCms.Data.\04.MongoCms.Data.csproj">
+      <Project>{1af0f8a9-6643-4cd4-a756-9aa439cee676}</Project>
+      <Name>04.MongoCms.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MongoCms.Entity\02.MongoCms.Entity.csproj">
+      <Project>{5867505e-f207-4758-8063-8dece04eb762}</Project>
+      <Name>02.MongoCms.Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

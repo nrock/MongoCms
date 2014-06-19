@@ -1,5 +1,5 @@
 ﻿
-namespace MongoCms.Data.Entity
+namespace MongoCms.Web.ViewModels
 {
 	public class RentalsFilter
 	{

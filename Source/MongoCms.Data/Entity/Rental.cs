@@ -29,13 +29,6 @@ namespace MongoCms.Data.Entity
         {
         }
 
-        public Rental(PostRental postRental)
-        {
-            Description = postRental.Description;
-            NumberOfRooms = postRental.NumberOfRooms;
-            Price = postRental.Price;
-            Address = (postRental.Address ?? string.Empty).Split('\n').ToList();
-        }
 
         public void AdjustPrice(AdjustPrice adjustPrice)
         {

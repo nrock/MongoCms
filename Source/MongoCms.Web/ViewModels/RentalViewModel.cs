@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MongoCms.Data.Entity
+namespace MongoCms.Web.ViewModels
 {
-    public class PostRental
+    public class RentalViewModel
     {
         public string Description { get; set; }
         public int NumberOfRooms { get; set; }
